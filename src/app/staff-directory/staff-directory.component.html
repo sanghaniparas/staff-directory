@@ -1,0 +1,20 @@
+<div class="col col-xs-12 col-sm-12 col-md-12 col-lg-12 sfd-header">
+    <span class="fa fa-users" aria-hidden="true"></span>STAFF DIRECTORY
+</div>
+<div class="form-group">
+    <input type="text" name="search" class="form-control" placeholder="Search..." [(ngModel)]="searchedKeyword">
+</div>
+<div class="group">
+    <div class="sfd-box" *ngFor="let person of staff|filter:searchedKeyword">
+        <div class="row sfd-row">
+            <div class="col col-xs-2 col-sm-2 col-md-2 col-lg-1 col-xl-1 sfd-profile">
+                <img [src]="person.ProfileImages" class="rounded-circle">
+            </div>
+            <div class="col col-xs-10 col-sm-10 col-md-10 col-lg-11 col-xl-11 sfd-detail">
+                <span class="sfd-name">{{person.Title}}</span><br>
+                <span class="fa fa-envelope-o"></span><span class="sfd-data">{{person.EMail}}</span><br>
+                <span class="fa fa-phone"></span><span class="sfd-data"> {{person.MobilePhone}}</span>
+            </div>
+        </div>
+    </div>
+</div>

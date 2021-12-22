@@ -1,0 +1,70 @@
+.sfd-header{ 
+    background-color:#2572B8;
+    color: white;
+    padding: 10px 10px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    border-radius: 8px;
+}
+span.fa::before {
+    padding-right: 5px;
+}
+span.fa.fa-envelope-o {
+    max-width: 98%;
+}
+.sfd-name{
+    font-weight: bold;
+    color:#2572B8 ;
+}
+.sfd-detail{
+    padding-top: 10px;
+}
+.group{
+    padding-right: 23px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 600px; 
+}
+.group::-webkit-scrollbar{
+    display: none;
+}
+span.sfd-data{
+    font-size: 15px;
+    line-height: 1.2 !important;
+}
+.group{
+    -ms-overflow-style: none;  
+    scrollbar-width: none;
+}
+img.rounded-circle {
+    height: 80px;
+    width: 80px;
+}
+.sfd-row{
+    padding: 10px;
+    border-bottom: 1px solid rgb(190, 190, 190);
+}
+@media (min-width:992px) and (max-width:1450px) {
+    img.rounded-circle {
+        height: 75px !important;
+        width: 75px !important;
+    }   
+    .sfd-detail{
+        padding-left: 20px;
+        padding-top: 0px !important;
+        padding-left: 20px;
+    }
+}
+@media only screen and (max-width:990px) {
+    img.rounded-circle {
+        height: 100px !important;
+        width: 100px !important;
+    }   
+    .sfd-detail{
+        font-size: 20px !important;
+    }
+}
+
+
+
+
